@@ -1,0 +1,73 @@
+.dropdown-menu{
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+.open>.dropdown-menu{
+  display: block;
+  animation:slideUpIn 0.2s;
+  animation-play-state: running;
+}
+
+.closed>.dropdown-menu{
+  display: block;
+  animation:slideUpOut 0.2s;
+  animation-play-state: running;
+  animation-fill-mode:forwards
+}
+
+/*动画*/
+@keyframes slideUpIn {
+  0% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleY(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideUpOut {
+  0% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleY(0.8);
+  }
+}
+
+/*顶部导航*/
+.navbar-nav>li>a{
+  line-height: 30px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background-color: transparent;
+}
+.navbar-nav>li{float: left;}
+.navbar-nav>li>a{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-nav{margin: 0;}
+.navbar-nav .open .dropdown-menu{
+  position:absolute;
+  padding: 5px 0;
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}

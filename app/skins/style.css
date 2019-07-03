@@ -1,0 +1,107 @@
+html, body, #root {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.screen-lg {
+    position: relative;
+}
+
+.ant-layout {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    background: #f0f2f5;
+    min-height: 100vh;
+    transition: all 0.2s;
+}
+
+.ant-layout.ant-layout-has-sider {
+    flex-direction: row;
+}
+
+/*左侧菜单*/
+.ant-layout-sider {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #001529;
+    box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+    transition: all 0.2s;
+    min-height: 100vh;
+}
+
+#layout-left {
+    width: 256px;
+}
+
+#layout-right {
+    padding-left: 256px;
+}
+
+.sider-menu-logo {
+    position: relative;
+    height: 64px;
+    padding-left: 24px;
+    overflow: hidden;
+    line-height: 64px;
+    background: #002140;
+    transition: all 0.3s;
+}
+
+.sider-menu-logo img {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.sider-menu-logo h1 {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+}
+
+.ant-layout-sider-collapsed .mm-collapse {
+    display: none;
+}
+
+.ant-layout-sider-collapsed .has-arrow:after,
+.ant-layout-sider-collapsed .has-arrow > span {
+    display: none;
+}
+
+.ant-layout-sider-collapsed .sidebar-nav .metismenu a {
+    padding: 13px 30px
+}
+
+.ant-layout-sider-collapsed .metismenu a > .fa {
+    font-size: 16px;
+}
+
+.ant-layout-sider-collapsed .mm-collapse {
+    position: absolute;
+    left: 100%;
+    word-break: keep-all;
+}
+
+.ant-layout-sider-collapsed .metismenu > li:hover .mm-collapse {
+    display: block;
+}
+
+.menu-fold {
+    height: 60px;
+    padding: 20px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*顶部导航*/
+.navbar-default {
+    background-color: #fff;
+}
+

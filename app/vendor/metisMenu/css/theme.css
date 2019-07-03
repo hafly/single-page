@@ -1,0 +1,64 @@
+/*自定义目录样式*/
+.sidebar-nav {
+    height: 100%;
+}
+
+.sidebar-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .metismenu {
+    display: flex;
+    flex-direction: column;
+    padding:16px 0;
+}
+
+.sidebar-nav .metismenu > li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sidebar-nav .metismenu a {
+    position: relative;
+    display: block;
+    padding: 13px 24px;
+    color: rgba(255, 255, 255, 0.65);
+    outline-width: 0;
+    transition: all .3s ease-out;
+    text-decoration: none;
+}
+
+.sidebar-nav .metismenu ul a {
+    padding: 12px 15px 12px 46px;
+}
+
+.sidebar-nav .metismenu ul ul a {
+    padding: 10px 15px 10px 45px;
+}
+
+.sidebar-nav .metismenu a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.sidebar-nav .metismenu a.active {
+    background-color: #1890FF;
+    color: #fff;
+}
+
+.sidebar-nav .metismenu a.has-arrow:hover,
+.sidebar-nav .metismenu a.has-arrow:focus {
+    background-color: #001529;
+}
+
+.sidebar-nav li ul {
+    background-color: #000c17;
+}
+
+.sidebar-nav .metismenu .mm-active>.has-arrow{
+    color: #fff;
+}
+.metismenu a>.fa{margin-right:10px;}

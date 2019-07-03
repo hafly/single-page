@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>首页</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/metisMenu/css/metisMenu.min.css">
+    <link rel="stylesheet" href="vendor/metisMenu/css/theme.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- build:css skins/main.css -->
+    <link rel="stylesheet" href="skins/style.css">
+    <link rel="stylesheet" href="skins/reset.css">
+    <!-- endbuild -->
+    <!-- build:js commons/common.js -->
+    <script src="vendor/require/require.min.js"></script>
+    <script src="commons/config.js"></script>
+    <!-- endbuild -->
+    <!-- build:js commons/main.js -->
+    <script src="commons/main.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<div id="root">
+    <div class="screen-lg">
+        <!--主体部分，左右结构-->
+        <div class="ant-layout ant-layout-has-sider">
+            <!--左侧目录-->
+            <div class="ant-layout-sider" id="layout-left">
+                <div class="sidebar-nav" role="navigation">
+                    <div class="sider-menu-logo" id="logo">
+                        <a href="/"><img src="skins/images/logo.svg" alt="logo">
+                            <h1>Ant Design Pro</h1>
+                        </a>
+                    </div>
+                    <ul class="nav" id="metismenu"></ul>
+                </div>
+            </div>
+            <!--右侧内容-->
+            <div class="ant-layout" id="layout-right">
+                <div class="border-bottom" style="background-color: #fff">
+                    <div class="container-fluid">
+                        <nav class="nav navbar-default" role="navigation">
+                            <span class="menu-fold pull-left">
+                                <i aria-label="图标: menu-fold">
+                                    <svg viewBox="64 64 896 896" ata-icon="menu-fold" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d=""></path></svg>
+                                </i>
+                            </span>
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a href=""><span class="glyphicon glyphicon-user"></span> 退出</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown2">
+                                        Java <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="#">jmeter</a></li>
+                                        <li><a href="#">EJB</a></li>
+                                        <li><a href="#">Jasper Report</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">分离的链接</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">另一个分离的链接</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">SVN</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="page-wrapper" style="margin: 15px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

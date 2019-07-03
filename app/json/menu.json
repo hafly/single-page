@@ -1,0 +1,60 @@
+[
+    {
+        "name": "dashboard",
+        "pid": "0",
+        "id": "1",
+        "icon": "fa-dashboard",
+        "url": "",
+        "path": "",
+        "status": 1,
+        "children": [
+            {
+                "name": "面板1",
+                "pid": "1",
+                "id": "5",
+                "icon": "",
+                "url": "/dashboard1",
+                "path": "modules/main/dashboard/page1/index.html",
+                "status": 1
+            },
+            {
+                "name": "面板2",
+                "pid": "1",
+                "id": "6",
+                "icon": "",
+                "url": "/dashboard2",
+                "path": "modules/main/dashboard/page2/index.html",
+                "status": 1
+            }
+        ]
+    },
+    {
+        "name": "布局",
+        "pid": "0",
+        "id": "2",
+        "icon": "fa-th-large",
+        "url": "",
+        "path": "",
+        "status": 1,
+        "children": [
+            {
+                "name": "页面1",
+                "pid": "2",
+                "id": "3",
+                "icon": "",
+                "url": "/page1",
+                "path": "modules/main/page1/index.html",
+                "status": 1
+            },
+            {
+                "name": "页面2",
+                "pid": "2",
+                "id": "4",
+                "icon": "",
+                "url": "/page2",
+                "path": "modules/main/page2/index.html",
+                "status": 1
+            }
+        ]
+    }
+]
